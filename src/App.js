@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     // Fetch data from API
     axios
-      .get("https://trackwellness.in/api/tasks/d")
+      .get("https://dalip.trackwellness.in/api/tasks/d")
       .then((response) => {
         setTasks(response.data.tasks);
       })
@@ -22,7 +22,7 @@ const App = () => {
   };
 
   const redirectToTrackWellness = () => {
-    window.location.href = "https://trackwellness.in";
+    window.location.href = "https://dalip.trackwellness.in";
   };
 
   const toggleDarkMode = () => {
